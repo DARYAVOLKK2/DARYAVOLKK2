@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПОРТФОЛИО МОЁ</title>
+</head>
+<body>
+    <h1>HTML forms</h1>
+
+    <h2>login form</h2>
+<form action="form.php" method="get">
+    <label for="login">login</label>
+    <input type="text" name="login" placeholder="login" value="DARYAVOLKK" disabled> 
+    <label for="password">password</label>
+    <input type="password" name="password" placeholder="password"> 
+    <button type="submit">send</button>
+</form>
+ <h2>file form</h2>
+ <form action="" method="post">
+     <label for="avatar">Avatar</label>
+     <input type="file" name="avatar" accept="image/png,image/jpg" > 
+     <button type="submit">send</button>
+ </form>
+
+ <h2>color form</h2>
+ <form action="">
+     <input type="color" name="color" value="#f1f1f1">
+     <label for="color"></label>
+ </form>
+
+ <h2>number form</h2>
+ <form action="">
+ <label for="age">Age</label>
+ <input type="number" name="age" min="15" max="234" value="18" step="4"> 
+   </form>
+
+   <h2>Selected form</h2>
+   <form action="">
+       <label for="phone"choose your phone></label>
+       <select name="phone" id="phone">
+           <option value="">--Your phone--</option>
+           <option value="apple" >Apple</option>
+           <option value="Xioami"selected>Xiaomi</option>
+           <option value="samsung" disabled>Samsung</option>
+       </select>
+   </form>
+   <h2>Checkbox Form</h2>
+   <form action="">
+       <input type="checkbox" name="checkbox1">
+       <label for="checkbox1">Yes</label>
+
+       <input type="checkbox" name="checkbox2" checked>
+       <label for="checkbox2">No</label>
+
+       <input type="checkbox" name="checkbox3" disabled>
+       <label for="checkbox3">Doesn't say</label>
+   </form>
+
+   <h2>Radio form</h2>
+   <form action="">
+       <input type="radio" name="radio" checked >
+       <label for="raio">yes</label>
+       <input type="radio" name="radio"  >
+       <label for="raio">no</label>
+       
+    </form>
+
+    <h2>Slider form</h2>
+    <form action="">
+         
+        <input type="range" name="volume" id="volume" min="15" max="120" step="1" value="50">
+        <output class="volume-output"></output>
+         
+    </form>
+    <h2>TEXT</h2>
+    
+    <form action="">
+        <label for="name">your name</label>
+        <input type="text" placeholder="your name">
+        <label for="textarea">teaxtarea</label>
+        <textarea name="textarea"   cols="30" rows="30" placeholder="Please, write your answer" ></textarea>
+        <button type="submit">send</button>
+    </form>
+
+<script>
+ const volume = document.querySelector('#volume');
+ const output = document.querySelector('.volume-output');
+
+output.textContent = volume.value;
+
+volume.addEventListener('input', () => {
+output.textContent = volume.value;
+});
+ 
+    </script>
+</body>
+</html>
+
