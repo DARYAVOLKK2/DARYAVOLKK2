@@ -1,0 +1,15 @@
+.blocks {
+    width: 200px;
+    height: 100px;
+    color: white;
+}
+
+.black {
+    border: solid 1px black;
+    background-color: black;
+}
+
+.red {
+    border: solid 1px rgb(41, 87, 222);
+    background-color: rgb(41, 87, 222);
+}
